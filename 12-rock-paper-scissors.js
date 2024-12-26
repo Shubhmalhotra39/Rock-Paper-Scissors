@@ -38,7 +38,7 @@ document.querySelector('.js-paper-button').addEventListener('click',()=>{
 
 
 document.querySelector('.js-scissors-button').addEventListener('click',()=>{
-    playGame('Scissors');
+    playGame('scissors');
 });
 
 document.body.addEventListener('keydown',(event) =>{
@@ -47,21 +47,21 @@ document.body.addEventListener('keydown',(event) =>{
     }else if(event.key === 'p'){
         playGame('paper');
     }else if(event.key === 's'){
-        playGame('Scissors');
+        playGame('scissors');
     }
 })
 
 function playGame(playerMove){
      
 const computerMove=pickComputerMove();
-if (playerMove === 'Scissors'){
+if (playerMove === 'scissors'){
 if(computerMove === 'rock'){
 result='You Lose';
 }
 else if(computerMove === 'paper'){
 result='You Win';
 }
-else if(computerMove === 'Scissors'){
+else if(computerMove === 'scissors'){
 result='Tie';
 }}
 else
@@ -72,7 +72,7 @@ result='You Win';
 else if(computerMove === 'paper'){
 result='Tie';
 }
-else if(computerMove === 'Scissors'){
+else if(computerMove === 'scissors'){
 result='You Lose';
 }
 }
@@ -84,7 +84,7 @@ result='Tie';
 else if(computerMove === 'paper'){
 result='You Lose';
 }
-else if(computerMove === 'Scissors'){
+else if(computerMove === 'scissors'){
 result='You Win';
 }
 }
@@ -130,7 +130,7 @@ else if(randomnumber >=1/3 && randomnumber< 2/3){
     computerMove='paper';
 }
 else if(randomnumber >=2/3 && randomnumber<= 1){
-    computerMove='Scissors';
+    computerMove='scissors';
 }
 
 return computerMove;
