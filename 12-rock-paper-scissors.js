@@ -105,8 +105,8 @@ document.querySelector('.js-result')
 
 document.querySelector('.js-moves')
 .innerHTML = ` you
-    <img class="move-icon" src="rock-paper-scissors-images/${playerMove}-emoji.png">
-    <img class="move-icon" src="rock-paper-scissors-images/${computerMove}-emoji.png">
+    <img class="move-icon" src="rock-paper-scissorss-images/${playerMove}-emoji.png">
+    <img class="move-icon" src="rock-paper-scissorss-images/${computerMove}-emoji.png">
     computer`;
 
 /* alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
